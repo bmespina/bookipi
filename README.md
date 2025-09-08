@@ -13,10 +13,29 @@ This project contains source code and supporting files for a serverless applicat
   "name": "Application or endpoint name"
   }
 - events response:
+  {
+  "\_id": ObjectId("68a54cc40aea630b5484d22e"),
+  "email": "xxxxx",
+  "password": "yyyyyy",
+  "firstname": "zzzzz",
+  "lastname": "wwwww",
+  "address": "ppppp",
+  "city": "qqqqq",
+  "state": "rrrrr",
+  "zip": "sssss",
+  "country": "ttttt",
+  "phone": "uuuuu",
+  "role": "member",
+  "active": true,
+  "createdAt": ISODate("2023-11-01T15:30:12.345Z"),
+  "updatedAt": ISODate("2023-11-01T15:30:12.345Z")
+  }
+
   if a user is found:
-  {"\_id": "685d2e13c7277ae558e26ce5", "email": "xxxxx", "password": "yyyyyy"}
+  {"\_id": "685d2e13c7277ae558e26ce5", "email": "xxxxx", "password": "yyyyyy", ""}
   if a user is not found:
   {"StatusCode": 200, "body": {"message": null}}
+
 - template.yaml - A template that defines the application's AWS resources.
 
 The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
