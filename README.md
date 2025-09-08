@@ -1,4 +1,4 @@
-# bookipi user funtion
+# bookipi user function
 
 Authenticate users with username and password
 
